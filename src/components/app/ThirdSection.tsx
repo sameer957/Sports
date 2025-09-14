@@ -68,7 +68,7 @@ function NewsCard({ image: Image, date, author, title, desc, index }: any) {
             />
 
             <motion.div
-                className="w-full md:w-[234px] h-[180px] md:h-[150px] flex-shrink-0 rounded-lg overflow-hidden bg-gray-100"
+                className="w-full md:w-[234px] h-[180px] md:h-[150px] flex-shrink-0 rounded-lg overflow-hidden "
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 220 }}
                 style={{
