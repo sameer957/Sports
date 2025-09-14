@@ -229,7 +229,7 @@ function FirstSection() {
           The EuroLeague Finals Top Scorer is the <br />
           individual award for the player that gained <br />
           the highest points in the EuroLeague Finals
-          <Button className="py-8 text-2xl">Continue Reading</Button>
+          <Button className="py-8 text-2xl bg-black">Continue Reading</Button>
         </motion.div>
 
     
