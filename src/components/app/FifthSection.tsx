@@ -55,7 +55,7 @@ function ShutterOverlay({ onComplete }: { onComplete: () => void }) {
         setClicked(true);
         setTimeout(() => {
             onComplete();
-        }, 600); 
+        }, 600);
     };
 
     return (
@@ -116,14 +116,14 @@ function FifthSection() {
 
     return (
         <div ref={sectionRef} className="relative min-h-[100dvh] flex items-center justify-center">
-           
+
             <AnimatePresence>
                 {triggered && !showContent && <ShutterOverlay onComplete={() => setShowContent(true)} />}
             </AnimatePresence>
 
             {showContent && (
                 <div className="w-full px-4 md:px-8 lg:px-16 py-10 grid grid-cols-1 lg:grid-cols-2 gap-10">
-                    
+
                     <div>
                         <h2 className="text-xl md:text-2xl font-bold mb-4">Recent News</h2>
                         <div className="flex flex-col sm:flex-row gap-6">
@@ -141,7 +141,7 @@ function FifthSection() {
                         </div>
                     </div>
 
-                  
+
                     <div>
                         <h2 className="text-xl md:text-2xl font-bold mb-4">Clubs Ranking</h2>
                         <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md">

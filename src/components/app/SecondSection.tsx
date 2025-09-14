@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Soccer, BasketBallonFloor, SportsCar, TableTennis } from "@/assets";
+import { LABELS } from "@/utils/Labels";
 
 const itemVariants = {
     hiddenLeft: { x: -120, opacity: 0 },
@@ -14,26 +15,26 @@ export default function SecondSection() {
 
     const columns = [
         [
-            { type: "card", title: "FOOTBALL", alt: "football" },
+            { type: "card", title: LABELS.SECOND_SECTION.FOOTBALL, alt: "football" },
             { type: "image", img: Soccer, alt: "football" },
         ],
         [
             { type: "image", img: BasketBallonFloor, alt: "basketball" },
-            { type: "card", title: "BASKET BALL" },
+            { type: "card", title: LABELS.SECOND_SECTION.BASKET_BALL },
         ],
         [
-            { type: "card", title: "CAR SPORT" },
+            { type: "card", title: LABELS.SECOND_SECTION.CAR_SPORT },
             { type: "image", img: SportsCar, alt: "sports car" },
         ],
         [
             { type: "image", img: TableTennis, alt: "table tennis" },
-            { type: "card", title: "TABLE TENNIS" },
+            { type: "card", title: LABELS.SECOND_SECTION.TABLE_TENNIS},
         ],
     ];
 
     return (
         <section className="bg-gray-50 py-10 px-5 md:px-20 w-full h-full">
-            <h2 className="text-3xl md:text-4xl font-bold mb-10">Categories</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-10">{LABELS.SECOND_SECTION.HEADING}</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                 {columns.map((col, colIdx) => {

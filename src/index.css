@@ -2,8 +2,8 @@
 @import "tw-animate-css";
 
 :root {
-  --primary-color: #1e90ff;   /* blue */
-  --secondary-color: #ff6347; /* tomato */
+  --primary-color: #1e90ff;   
+  --secondary-color: #ff6347; 
   --background-color: #f5f5f5;
   --text-color: #333333;
   --color-black:#262626;
