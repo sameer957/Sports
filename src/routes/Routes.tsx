@@ -55,50 +55,50 @@ import TrendingNews from "../pages/TrendingNews";
 import RecentNews from "../pages/RecentNews";
 import ClubsRanking from "../pages/ClubsRanking";
 import SportsArticle from "../pages/SportsArticle";
-import LoadingSpinner from "../components/ui/LoadingSpinner";
-import { useEffect, useState } from "react";
+// import LoadingSpinner from "../components/ui/LoadingSpinner";
+// import { useEffect, useState } from "react";
 
-function withDelay(Component:any) {
-  return function WrappedComponent() {
-    const [loading, setLoading] = useState(true);
+// function withDelay(Component:any) {
+//   return function WrappedComponent() {
+//     const [loading, setLoading] = useState<boolean>(true);
 
-    useEffect(() => {
-      const timer = setTimeout(() => setLoading(false), 2000); // 2 seconds
-      return () => clearTimeout(timer);
-    }, []);
+//     useEffect(() => {
+//       const timer = setTimeout(() => setLoading(false), 2000); // 2 seconds
+//       return () => clearTimeout(timer);
+//     }, []);
 
-    if (loading) return <LoadingSpinner />;
-    return <Component />;
-  };
-}
+//     if (loading) return <LoadingSpinner />;
+//     return <Component />;
+//   };
+// }
 
 export const routes = [
   {
     path: PATHS.LANDING_PAGE,
-    element: withDelay(LandingPage)(),
+    element: <LandingPage />,
   },
   {
     path: PATHS.HOME,
-    element: withDelay(Home)(),
-  },
+    element: <Home />
+  }, 
   {
     path: PATHS.CATEGORY,
-    element: withDelay(Category)(),
-  },
+    element: <Category />
+  }, 
   {
     path: PATHS.TRENDING,
-    element: withDelay(TrendingNews)(),
+    element: <TrendingNews />
   },
   {
-    path: PATHS.RECENT,
-    element: withDelay(RecentNews)(),
+    path:PATHS.RECENT,
+    element:<RecentNews/>
   },
   {
-    path: PATHS.CLUBS,
-    element: withDelay(ClubsRanking)(),
+    path:PATHS.CLUBS,
+    element:<ClubsRanking/>
   },
   {
-    path: PATHS.ARTICLES,
-    element: withDelay(SportsArticle)(),
-  },
+    path:PATHS.ARTICLES,
+    element:<SportsArticle/>
+  }
 ];
