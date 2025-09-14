@@ -1,4 +1,3 @@
-// ShutterButton.tsx
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
