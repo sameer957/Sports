@@ -1,69 +1,45 @@
-# React + TypeScript + Vite
+Sports Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive, animated sports website built with React, TailwindCSS, Framer Motion, and shadcn/ui.
 
-Currently, two official plugins are available:
+This project showcases sports highlights, animated sections, and responsive UI with smooth motion effects.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features
 
-## Expanding the ESLint configuration
+ Vite + React for blazing fast development
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+ TailwindCSS for modern styling
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+ Framer Motion for animations & transitions
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+ shadcn/ui components with full customization support
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+ Responsive design (desktop & mobile optimized)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+ Sports-themed assets (Basketball, Player, Icons, etc.)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+ Mouse spring & parallax effects
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Tech Stack
+
+ Frontend: React + TypeScript
+
+ Styling: TailwindCSS + shadcn/ui
+
+ Animations: Framer Motion
+
+ Build Tool: Vite
+
+ Deployment: Vercel
+
+Setup
+ git clone https://github.com/sameer957/Sports.git
+
+ cd Sports
+
+ pnpm i
+
+ pnpm dev
+
+About 
+images are stored in assets some are svg and some are png, I used png becuase at many places svgs were not working.
