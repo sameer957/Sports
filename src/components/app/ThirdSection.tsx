@@ -26,7 +26,6 @@ export default function ThirdSection() {
 
     return (
         <div className="w-full md:px-10 lg:px-28 py-10 h-full">
-
             <motion.div
                 initial={{ opacity: 0, y: 60 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -34,8 +33,6 @@ export default function ThirdSection() {
                 viewport={{ once: true, amount: 0.25 }}
                 className="flex flex-col xl:flex-row gap-6 items-stretch"
             >
-
-
                 <motion.div
                     onPointerEnter={() => setHoveredSide("left")}
                     onPointerLeave={() => setHoveredSide(null)}
@@ -83,7 +80,6 @@ export default function ThirdSection() {
                     />
                 </motion.div>
 
-
                 <motion.div
                     ref={rightRef}
                     onPointerMove={onRightPointerMove}
@@ -115,8 +111,6 @@ export default function ThirdSection() {
                     >
                         <CyclingBenefit className="w-full h-full object-cover" />
                     </motion.div>
-
-
                 </motion.div>
             </motion.div>
         </div>

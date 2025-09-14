@@ -1,9 +1,9 @@
-import { PageTransitionWrapper } from '@/components/animations/PageTransitionWrapper'
+import ThirdSection from '@/components/app/ThirdSection'
 
 
 function TrendingNews() {
   return (
-    <div><PageTransitionWrapper/></div>
+    <ThirdSection />
   )
 }
 

@@ -49,7 +49,7 @@ export default function Navbar() {
   const [isAnimating, setIsAnimating] = useState<boolean>(false);
   const navigate = useNavigate();
 
-  
+
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "auto";
   }, [mobileOpen]);
@@ -64,15 +64,15 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Shutter Overlay */}
+
       <AnimatePresence>
         {isAnimating && (
-        <PageTransitionOverlay/>
+          <PageTransitionOverlay />
         )}
       </AnimatePresence>
 
       <nav className="w-full bg-white shadow-sm px-6 py-1 flex justify-between items-center">
-        {/* Logo */}
+
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -81,7 +81,7 @@ export default function Navbar() {
           <NavIcon className="w-24 h-16" />
         </motion.div>
 
-        {/* Desktop Nav */}
+
         <motion.ul
           variants={container}
           initial="hidden"
@@ -98,7 +98,7 @@ export default function Navbar() {
           ))}
         </motion.ul>
 
-        {/* Desktop Search */}
+
         <motion.div
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -118,7 +118,7 @@ export default function Navbar() {
           </div>
         </motion.div>
 
-        {/* Mobile Hamburger */}
+
         <motion.div
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -133,7 +133,7 @@ export default function Navbar() {
           </button>
         </motion.div>
 
-        {/* Mobile Sidebar */}
+
         <AnimatePresence>
           {mobileOpen && (
             <motion.div

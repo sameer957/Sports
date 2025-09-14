@@ -29,9 +29,9 @@ function FirstSection() {
 
   return (
     <section className="bg-gray-50 flex-1 h-screen relative overflow-hidden">
-   
+
       <div className="hidden md:flex w-full h-full relative">
-     
+
         <motion.div
           style={{ x: springX, y: springY }}
           initial={{ y: -900, opacity: 1 }}
@@ -55,7 +55,7 @@ function FirstSection() {
           <BasketBallPlayer className="w-[800px] h-[800px]" />
         </motion.div>
 
-     
+
         <motion.div
           className="absolute bottom-0 text-lg flex flex-col gap-5 font-medium left-1/2 -translate-x-1/2 -translate-y-1/2"
           initial={{ y: 800, scale: 0.8, opacity: 0 }}
@@ -65,11 +65,11 @@ function FirstSection() {
           The EuroLeague Finals Top Scorer is the <br />
           individual award for the player that gained <br />
           the highest points in the EuroLeague Finals
-   
+
           <Button className="py-8 text-2xl bg-black">{LABELS.FIRST_SECTION.BTN}</Button>
         </motion.div>
 
-    
+
         <motion.h1
           className="absolute text-6xl md:text-8xl font-extrabold top-30 left-20 
             bg-gradient-to-b from-[#262626] to-[#B8C2CE] 
@@ -82,7 +82,7 @@ function FirstSection() {
           TOP <br /> SCORER TO <br /> THE FINAL <br /> MATCH
         </motion.h1>
 
-       
+
         <div className="absolute right-10 top-2 flex flex-col">
           <Button className="bg-[#E1E8F0] w-fit">
             <p className="text-[#B8C2CE]">Today</p>
@@ -108,7 +108,7 @@ function FirstSection() {
         </div>
       </div>
 
-     
+
       <div className="md:hidden w-full h-screen relative bg-gray-100">
         <motion.h1
           className="text-3xl font-extrabold text-gray-900 text-center pt-6
@@ -144,9 +144,6 @@ function FirstSection() {
         </motion.div>
       </div>
     </section>
-
-
-
   );
 }
 

@@ -13,17 +13,6 @@ import RaceHorse from "./RaceHorse.svg?react";
 import CyclingBenefit from "./CyclingBenefit.svg?react";
 import Karate from "./Karate.svg?react";
 
-
-
-
-
-
-
-
-
-
-
-
 export {
     NavIcon,
     BasketBall,
@@ -38,8 +27,5 @@ export {
     Cyclist,
     RaceHorse,
     CyclingBenefit,
-    Karate,
-
-
-
+    Karate
 }

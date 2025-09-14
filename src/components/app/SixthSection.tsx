@@ -1,5 +1,3 @@
-
-"use client";
 import { useState } from "react";
 import BasketballEquipment from "../../assets/BasketballEquipment.png";
 import IceSkating from "../../assets/IceSkating.png";
@@ -10,7 +8,6 @@ import Bong from "../../assets/Bong.png";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaArrowLeftLong } from "react-icons/fa6";
-
 
 function ArticleCard({ image, tag, authorImg, author, date, title, desc }: any) {
     return (
@@ -104,7 +101,6 @@ function SixthSection() {
         <section className="w-full px-6 md:px-10 lg:px-28 py-10">
             <h2 className="text-2xl font-bold mb-8">Sports Article</h2>
 
-
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
                 <AnimatePresence mode="popLayout">
                     {getVisibleArticles().map((article, idx) => (
@@ -112,7 +108,6 @@ function SixthSection() {
                     ))}
                 </AnimatePresence>
             </div>
-
 
             <div className="flex gap-4">
                 <button

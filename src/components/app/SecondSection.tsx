@@ -28,7 +28,7 @@ export default function SecondSection() {
         ],
         [
             { type: "image", img: TableTennis, alt: "table tennis" },
-            { type: "card", title: LABELS.SECOND_SECTION.TABLE_TENNIS},
+            { type: "card", title: LABELS.SECOND_SECTION.TABLE_TENNIS },
         ],
     ];
 
@@ -39,8 +39,7 @@ export default function SecondSection() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                 {columns.map((col, colIdx) => {
                     const isLeftHalf = colIdx < 2;
-
-
+                    
                     return (
                         <div key={colIdx} className="flex flex-col gap-6 md:gap-6">
 
@@ -84,7 +83,6 @@ export default function SecondSection() {
                                     </motion.div>
                                 );
                             })}
-
                         </div>
                     );
                 })}

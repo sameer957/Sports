@@ -38,7 +38,6 @@ function SeventhSection() {
                         NEWSLETTER <br /> SUBSCRIPTION
                     </motion.h1>
 
-
                     <div className="flex w-full max-w-md">
                         <input
                             type="email"

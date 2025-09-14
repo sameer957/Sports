@@ -60,7 +60,6 @@ function FourthSection() {
                     <FaArrowRightLong />
                 </button>
             </div>
-
          
             <div className="flex gap-2 sm:gap-3 bg-[#EBEEF3] py-2 sm:py-4 w-full items-center justify-center sm:justify-end pr-2 sm:pr-10 ">
                 <button

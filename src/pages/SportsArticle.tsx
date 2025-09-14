@@ -1,9 +1,8 @@
-import { PageTransitionWrapper } from '@/components/animations/PageTransitionWrapper'
-
+import SixthSection from '@/components/app/SixthSection'
 
 function SportsArticle() {
   return (
-    <div><PageTransitionWrapper/></div>
+    <div className='w-full h-screen'><SixthSection /></div>
   )
 }
 
